@@ -1,3 +1,2 @@
 ### Skywing
-
-https://superb-frangipane-164228.netlify.app/destinations
+https://skywing-project.netlify.app/
