@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyWing</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+  </head>
+  <body>
+    <!-- navbar starts here  -->
+    <nav class="navbar py-4 navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">SkyWing</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link disabled" aria-current="page" href="#">Destinations</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link active" aria-current="page" href="./faqs.html">Travel Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <div class="container">
+      <h2 class="display-5 py-5 text-center fw-bold">Current Destinations</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img src="images/destinations/paris.jpg" class="card-img-top card-destination" alt="Paris" />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text">Known for its romantic ambiance, iconic landmarks, and world-class cuisine.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#parisModal">
+                Explore Paris
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="parisModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="parisModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="parisModalLabel">Paris, France</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Paris, the capital of France, is renowned for its romantic ambiance, iconic landmarks such as the
+                    Eiffel Tower and the Louvre Museum, and world-class cuisine. Explore the charming streets, visit
+                    historic sites, and immerse yourself in the vibrant culture of this beautiful city.
+                  </p>
+                  <p><strong>Cost:</strong> $2000</p>
+                  <p><strong>Duration:</strong> 5 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, guided tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img src="images/destinations/tokyo.jpg" class="card-img-top card-destination" alt="Tokyo" />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Tokyo, Japan</h5>
+              <p class="card-text">A vibrant city known for its blend of traditional culture and modern technology.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tokyoModal">
+                Explore Tokyo
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="tokyoModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="tokyoModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="tokyoModalLabel">Tokyo, Japan</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Tokyo, the capital of Japan, is a bustling metropolis known for its modern skyscrapers, pop culture,
+                    and historic temples. Explore the vibrant neighborhoods, enjoy delicious Japanese cuisine, and
+                    experience the blend of traditional and contemporary Japan.
+                  </p>
+                  <p><strong>Cost:</strong> $2500</p>
+                  <p><strong>Duration:</strong> 7 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, city tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img src="images/destinations/new-york.jpg" class="card-img-top card-destination" alt="New York City" />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">New York City, USA</h5>
+              <p class="card-text">The city that never sleeps, with its iconic skyline and diverse culture.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nycModal">
+                Explore NYC
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="nycModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="nycModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="nycModalLabel">New York City, USA</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    New York City, often simply called New York, is the most populous city in the United States. With
+                    its iconic landmarks like the Statue of Liberty, Times Square, and Central Park, it is known for its
+                    cultural diversity, arts scene, and vibrant nightlife.
+                  </p>
+                  <p><strong>Cost:</strong> $1800</p>
+                  <p><strong>Duration:</strong> 4 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, city tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img src="images/destinations/london.jpg" class="card-img-top card-destination" alt="London" />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">London, UK</h5>
+              <p class="card-text">
+                Rich in history, culture, and iconic landmarks like Big Ben and Buckingham Palace.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#londonModal">
+                Explore London
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="londonModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="londonModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="londonModalLabel">London, UK</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    London, the capital of England and the United Kingdom, is a 21st-century city with a history
+                    stretching back to Roman times. Explore the historic landmarks, museums, and theaters, and enjoy the
+                    diverse culture and cuisine of this vibrant city.
+                  </p>
+                  <p><strong>Cost:</strong> $2200</p>
+                  <p><strong>Duration:</strong> 6 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, guided tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img src="images/destinations/italy.jpg" class="card-img-top card-destination" alt="Rome" />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Rome, Italy</h5>
+              <p class="card-text">Home to ancient ruins, world-renowned art, and delicious Italian cuisine.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#romeModal">
+                Explore Rome
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="romeModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="romeModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="romeModalLabel">Rome, Italy</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Rome, the capital of Italy, is a sprawling, cosmopolitan city with nearly 3,000 years of globally
+                    influential art, architecture, and culture on display. Explore the ancient ruins, visit the Vatican
+                    City, and indulge in delicious Italian cuisine.
+                  </p>
+                  <p><strong>Cost:</strong> $1900</p>
+                  <p><strong>Duration:</strong> 5 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, guided tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img src="images/destinations/sydney.jpg" class="card-img-top card-destination" alt="Sydney" />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Sydney, Australia</h5>
+              <p class="card-text">Famous for its stunning harbor, Sydney Opera House, and beautiful beaches.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sydneyModal">
+                Explore Sydney
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="sydneyModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="sydneyModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="sydneyModalLabel">Sydney, Australia</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Sydney, the capital of New South Wales and one of Australia's largest cities, is best known for its
+                    harborfront Sydney Opera House, with a distinctive sail-like design, and the Sydney Harbour Bridge,
+                    which offers stunning views of the harbor and city skyline. Explore the vibrant city life, relax on
+                    beautiful beaches, and enjoy the rich cultural experiences Sydney has to offer.
+                  </p>
+                  <p><strong>Cost:</strong> $2400</p>
+                  <p><strong>Duration:</strong> 6 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, city tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img src="images/destinations/dubai.jpg" class="card-img-top card-destination" alt="Dubai" />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Dubai, UAE</h5>
+              <p class="card-text">Known for its luxury shopping, ultramodern architecture, and vibrant nightlife.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dubaiModal">
+                Explore Dubai
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="dubaiModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="dubaiModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="dubaiModalLabel">Dubai, UAE</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Dubai, the largest and most populous city in the United Arab Emirates, is known for its luxury
+                    shopping, ultramodern architecture, and vibrant nightlife scene. Explore the iconic Burj Khalifa,
+                    shop at the Dubai Mall, and experience the desert safari for a taste of traditional Arabian culture.
+                  </p>
+                  <p><strong>Cost:</strong> $2100</p>
+                  <p><strong>Duration:</strong> 5 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, city tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img
+                src="images/destinations/rio-de-janeiro.jpg"
+                class="card-img-top card-destination"
+                alt="Rio de Janeiro"
+              />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Rio de Janeiro, Brazil</h5>
+              <p class="card-text">
+                Famous for its breathtaking beaches, vibrant Carnival festival, and stunning natural landscapes.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rioModal">
+                Explore Rio
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="rioModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="rioModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="rioModalLabel">Rio de Janeiro, Brazil</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Rio de Janeiro, or simply Rio, is the second-most populous city in Brazil and the sixth-most
+                    populous in the Americas. Explore the stunning beaches of Copacabana and Ipanema, experience the
+                    vibrant Carnival festival, and visit the iconic Christ the Redeemer statue for breathtaking views of
+                    the city.
+                  </p>
+                  <p><strong>Cost:</strong> $2300</p>
+                  <p><strong>Duration:</strong> 6 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, city tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card destination-card">
+            <figure>
+              <img src="images/destinations/cario.jpg" class="card-img-top card-destination" alt="Cairo" />
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Cairo, Egypt</h5>
+              <p class="card-text">Home to ancient wonders like the Pyramids of Giza and the Sphinx.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cairoModal">
+                Explore Cairo
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="cairoModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="cairoModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="cairoModalLabel">Cairo, Egypt</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Cairo, the capital of Egypt, is a sprawling metropolis known for its ancient history and rich
+                    cultural heritage. Explore the iconic Pyramids of Giza, the Sphinx, and the Egyptian Museum, and
+                    immerse yourself in the fascinating history of this ancient city.
+                  </p>
+                  <p><strong>Cost:</strong> $1900</p>
+                  <p><strong>Duration:</strong> 5 days</p>
+                  <p><strong>Includes:</strong> Accommodation, meals, guided tours</p>
+                  <p><strong>Excludes:</strong> Airfare, personal expenses</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'contact.html';">
+                    Contact for Booking
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer starts here -->
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container p-5 border-bottom">
+        <div class="row">
+          <div class="col-lg-6 text-white col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-white">About SkyWing</h5>
+            <p>
+              SkyWing is a premium airline known for its exceptional service and commitment to passenger satisfaction.
+              With a fleet of modern aircraft and a focus on safety, SkyWing provides a comfortable and reliable travel
+              experience for its customers.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-white">
+            <h5 class="text-uppercase text-white">SkyWing Destinations</h5>
+            <p>
+              SkyWing offers flights to a wide range of destinations around the world. Whether you're looking for a
+              relaxing beach getaway or an exciting city adventure, SkyWing has the perfect destination for you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center mt-3">
+        <span class="text-white">© 2024 SkyWing | </span>
+        <span class="text-white ms-auto">Text Source : Chatgpt | Images Source: Google Images</span>
+      </div>
+    </footer>
+
+    <!-- footer ends here  -->
+
+    <!-- script file here  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          const myModal = document.getElementById("myModal")
+          const myInput = document.getElementById("myInput")
+
+          if (myModal && myInput) {
+            myModal.addEventListener("shown.bs.modal", () => {
+              myInput.focus()
+            })
+          } else {
+            console.error("Could not find one or both elements.")
+          }
+        }, 100) // Delay in milliseconds
+      })
+    </script>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

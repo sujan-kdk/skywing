@@ -1,0 +1,116 @@
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #003366;
+}
+
+/* Home Page Css  */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.testimonial-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.home-aeroplane {
+  transform: rotate(-3deg);
+}
+
+.featured-img {
+  object-fit: cover;
+  height: 300px;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.featured-img:hover {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
+.featured-title {
+  color: #333;
+  font-weight: bold;
+}
+
+.featured-text {
+  color: #666;
+}
+/* About Us Page  */
+.display-1 {
+  font-family: "Epilogue", sans-serif;
+  font-size: 3rem;
+  padding: 5px;
+  line-height: 1.1;
+}
+.embed-responsive-item {
+  transform: rotate(-1deg);
+  border-radius: 25px;
+}
+/* destination  */
+.destination-card figure .card-destination {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+.destination-card figure:hover .card-destination {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* faqs */
+.custom-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-card-body {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.custom-card-title {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.custom-card-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.card-faqs {
+  transition: transform 0.3s;
+}
+
+.card-faqs:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
