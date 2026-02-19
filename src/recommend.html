@@ -1,1 +1,83 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>AI-Powered Travel Recommendation Wizard</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <div class="container">\n        <h1>Travel Recommendation Wizard</h1>\n        <form id="recommendation-form">\n            <div class="step" id="step-1">\n                <h2>Step 1: Where are you traveling from?</h2>\n                <input type="text" name="departure" placeholder="Your current city" required>\n                <button type="button" onclick="nextStep(1)">Next</button>\n            </div>\n            <div class="step" id="step-2" style="display:none;">\n                <h2>Step 2: What type of destination are you looking for?</h2>\n                <select name="destination-type" required>\n                    <option value="beach">Beach</option>\n                    <option value="mountains">Mountains</option>\n                    <option value="city">City</option>\n                    <option value="cultural">Cultural site</option>\n                </select>\n                <button type="button" onclick="nextStep(2)">Next</button>\n            </div>\n            <div class="step" id="step-3" style="display:none;">\n                <h2>Step 3: What is your budget?</h2>\n                <input type="number" name="budget" min="0" placeholder="Enter your budget" required>\n                <button type="submit">Get Recommendations</button>\n            </div>\n        </form>\n    </div>\n    <script>\n        function nextStep(currentStep) {\n            document.getElementById(`step-${currentStep}`).style.display = 'none';\n            document.getElementById(`step-${currentStep + 1}`).style.display = 'block';\n        }\n    </script>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Recommendations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .wizard {
+            display: none;
+        }
+        .wizard.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Skywing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Get Your AI Travel Recommendations</h2>
+        <div id="wizard" class="wizard active">
+            <div class="step-1">
+                <h4>Step 1: Choose Your Destination</h4>
+                <select class="form-control" id="destination" required>
+                    <option value="">Select a destination</option>
+                    <option value="Paris">Paris</option>
+                    <option value="New York">New York</option>
+                    <option value="Tokyo">Tokyo</option>
+                </select>
+                <button class="btn btn-primary mt-3 next-step">Next</button>
+            </div>
+            <div class="step-2 wizard">
+                <h4>Step 2: Select Travel Dates</h4>
+                <input type="date" class="form-control" id="start-date" required>
+                <input type="date" class="form-control mt-2" id="end-date" required>
+                <button class="btn btn-primary mt-3 next-step">Next</button>
+            </div>
+            <div class="step-3 wizard">
+                <h4>Step 3: Fill in Your Information</h4>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="email" class="form-control mt-2" id="email" placeholder="Your Email" required>
+                <button class="btn btn-success mt-3 finish">Finish</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.next-step').click(function() {
+                $(this).closest('.wizard').removeClass('active').next('.wizard').addClass('active');
+            });
+            $('.finish').click(function() {
+                alert('Recommendations submitted!');
+            });
+        });
+    </script>
+</body>
+</html>
